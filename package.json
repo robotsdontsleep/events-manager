@@ -1,15 +1,33 @@
 {
   "name": "events-project",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "seed": "node scripts/seed.js"
   },
   "dependencies": {
+    "@react-email/components": "^1.0.1",
+    "@react-email/render": "^2.0.0",
+    "@reduxjs/toolkit": "^2.11.1",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.0",
     "next": "16.0.7",
+    "nodemailer": "^7.0.11",
+    "pg": "^8.16.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-hook-form": "^7.68.0",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-select": "^5.10.2",
+    "swiper": "^12.0.3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.8",
+    "prettier": "^3.7.4"
   }
 }

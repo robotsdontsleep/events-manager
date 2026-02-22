@@ -1,0 +1,24 @@
+:root {
+  --accent-color: #e1766c; /* default accent color*/
+  --accent-color-hover: #e86c60; /* hover accent color*/
+  --accent-color-active: #c24e46; /* active accent color*/
+
+  /* ───────────── TEXT ───────────── */
+  --color-text-primary: #222222; /* header text color*/
+  --color-text-secondary: #666666; /* paragraph text color*/
+  --color-text-muted: #cbcbcb; /*placeholder text color*/
+  --color-text-inverse: #ffffff; /*button link text color*/
+  --color-text-icon: #cfd2d6; /* icon color*/
+
+  /* ───────────── BACKGROUND ───────────── */
+  --color-bg-primary: #ffffff; /*app background color*/
+  --color-bg-secondary: #f5f5f5; /* wrapper background color*/
+  --color-bg-section: #f5f5fc; /* section background color*/
+  --color-bg-button: #eaeaef; /* button background color*/
+  --color-bg-button-hover: #dedee6; /* button background hover color*/
+  --color-bg-button-active: #d3d3dd; /* button background active color*/
+  /* ───────────── BORDER ───────────── */
+  --color-border-primary: #cfd2d6; /* button border color  */
+  --color-border-secondary: #faeaea; /* card wrapper border color  */
+}
+

@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav a {
+  font-size: 18px;
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: var(--accent-color-hover);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}

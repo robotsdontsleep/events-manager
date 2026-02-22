@@ -1,0 +1,39 @@
+.herosection {
+  display: flex;
+  position: relative;
+  min-height: 600px;
+  background: url('assets/images/home-hero.jpg') center/cover no-repeat;
+  isolation: isolate;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 250px 0;
+}
+
+.glass {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.content {
+  z-index: 2;
+}
+
+.content h1 {
+  font-family: 'Neuton', sans-serif;
+  font-size: 100px;
+  color: var(--color-text-inverse);
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+.content p {
+  text-align: center;
+  color: var(--color-text-inverse);
+  font-size: 24px;
+  margin: 0 auto;
+}

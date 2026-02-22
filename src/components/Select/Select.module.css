@@ -1,0 +1,155 @@
+.select {
+  position: static;
+  width: 250px;
+  height: 100%;
+  font:
+    400 16px 'Poppins',
+    sans-serif;
+}
+
+/* Control */
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background 0.25s ease;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Value container */
+.valueContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Placeholder */
+.placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Indicators */
+.indicators {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.clearIndicator {
+  display: inline-flex;
+  line-height: 0;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.clearIndicator:hover {
+  opacity: 1;
+}
+
+.dropdownIndicator {
+  display: inline-flex;
+  line-height: 0;
+  opacity: 0.7;
+  cursor: pointer;
+  transform-origin: center;
+  transition:
+    transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.15s ease;
+}
+
+.dropdownIndicator:hover {
+  opacity: 1;
+}
+
+.controlOpen .dropdownIndicator {
+  transform: rotate(180deg);
+}
+
+.controlOpen .dropdownIndicator svg {
+  transform: none;
+}
+
+/* Menu */
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 1;
+  animation: menuFadeIn 0.15s ease-out;
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Menu list */
+.menuList {
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 6px 0;
+  box-shadow: inset 0 -6px 6px -6px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom scrollbar (WebKit) */
+.menuList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menuList::-webkit-scrollbar-thumb {
+  background: var(--color-bg-primary);
+  border-radius: 6px;
+}
+
+.menuList::-webkit-scrollbar-thumb:hover {
+  background: var(--color-bg-primary);
+}
+
+/* Options */
+.option {
+  padding: 10px 16px;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+  min-height: 44px;
+}
+
+.optionFocused {
+  background: var(--color-bg-secondary);
+}
+
+.optionSelected {
+  background: var(--accent-color);
+  color: var(--color-text-inverse);
+}
+
+/* No options */
+.noOptions {
+  padding: 12px 16px;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  text-align: center;
+}

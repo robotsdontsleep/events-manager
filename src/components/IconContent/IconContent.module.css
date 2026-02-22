@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.content svg {
+  width: 20px;
+  height: 20px;
+}
