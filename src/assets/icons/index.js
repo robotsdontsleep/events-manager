@@ -15,6 +15,7 @@ import { IoPhonePortraitOutline } from 'react-icons/io5';
 import { GoClock } from 'react-icons/go';
 
 import { MdOutlineMailOutline } from 'react-icons/md';
+
 export {
   CiHeart,
   CiShoppingCart,

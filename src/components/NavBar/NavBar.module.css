@@ -6,6 +6,19 @@
   padding: 0 10px;
 }
 
+.signOutBtn {
+  font-size: 18px;
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.signOutBtn:hover {
+  color: var(--accent-color-hover);
+}
+
 .nav div {
   display: flex;
   align-items: center;
@@ -13,7 +26,7 @@
   gap: 15px;
 }
 
-.nav a {
+.links a {
   font-size: 18px;
   color: var(--color-text-inverse);
   text-decoration: none;
@@ -21,7 +34,7 @@
   white-space: nowrap;
 }
 
-.nav a:hover {
+.links a:hover {
   color: var(--accent-color-hover);
 }
 

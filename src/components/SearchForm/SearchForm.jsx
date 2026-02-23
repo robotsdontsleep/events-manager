@@ -24,7 +24,7 @@ export default function SearchForm(props) {
 
   const router = useRouter();
   const onSubmit = (data) => {
-    router.push(`/events?name=${data.name}&city=${data.city}&category=${data.category}`);
+    // router.push(`/events?name=${data.name}&city=${data.city}&category=${data.category}`);
   };
 
   return (

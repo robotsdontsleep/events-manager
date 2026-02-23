@@ -1,7 +1,9 @@
-@import "styles/reset.css";
-@import "styles/variables.css";
+@import 'styles/reset.css';
+@import 'styles/variables.css';
 
+html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -9,7 +11,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Asap", sans-serif;
+  font-family: 'Asap', sans-serif;
   font-weight: 700;
   letter-spacing: 0;
   color: var(--color-text-primary);
@@ -29,7 +31,7 @@ h4 {
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: var(--color-text-secondary);
   line-height: 1.6;
@@ -37,7 +39,7 @@ p {
 
 button {
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -48,7 +50,7 @@ button {
 }
 
 a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #222222;
   line-height: 1.4;
@@ -57,7 +59,9 @@ a {
 }
 
 input {
-  font: 400 16px "Poppins", sans-serif;
+  font:
+    400 16px 'Poppins',
+    sans-serif;
   color: var(--color-text-primary);
 }
 
