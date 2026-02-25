@@ -20,8 +20,6 @@ export default async function Home() {
     headers: await headers(),
   });
 
-  console.log('Session on server:', !!session);
-
   if (!session) {
     redirect('/signIn');
     return null;
