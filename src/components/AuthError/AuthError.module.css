@@ -2,7 +2,7 @@
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  background-color: #fef2f2; /* soft red background */
+  background-color: #fef2f2;
   border: 1px solid #fee2e2;
   padding: 12px 16px;
   border-radius: 10px;
@@ -11,7 +11,7 @@
 }
 
 .iconBox {
-  color: #ef4444; /* bright red for the icon */
+  color: #ef4444;
   display: flex;
   align-items: center;
   margin-top: 2px;
