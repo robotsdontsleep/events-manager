@@ -20,5 +20,12 @@ export const auth = betterAuth({
   },
   advanced: {
     trustHost: true,
+    crossOrigin: {
+      enabled: true,
+      allowedOrigins: [
+        'https://events-manager-virid.vercel.app',
+        'https://events-manager-epo1j87ga-robotsdontsleep.vercel.app',
+      ],
+    },
   },
 });
