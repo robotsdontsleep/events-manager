@@ -3,25 +3,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-
-/* .slider .swiper-wrapper {
-}
-
-.slider .swiper-slide {
-} */
 
 .button-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  padding: 30px;
+  gap: 0.9375rem;
+  padding: 1.875rem;
 }
 
 .btn {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
 
   background: var(--accent-color);
@@ -43,4 +38,23 @@
   border-color: var(--accent-color-active);
 
   transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+  .button-menu {
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-menu {
+    gap: 0.625rem;
+    padding: 0.75rem;
+  }
 }

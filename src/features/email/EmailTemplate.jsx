@@ -1,4 +1,4 @@
-import { Html, Body, Container, Text } from '@react-email/components';
+import { Html, Body, Container, Text } from 'react-@email/components';
 
 export default function EmailTemplate() {
   return (

@@ -1,7 +1,9 @@
 .carouselWrapper {
   position: relative;
-  width: 400px;
-  height: 72px;
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  min-height: 4.5rem;
   margin: 0 auto;
   overflow: hidden;
 
@@ -24,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 0.25rem;
   text-align: center;
   text-decoration: none;
   color: inherit;
@@ -37,23 +39,55 @@
 
 .carouselWrapper .slide h3,
 .carouselWrapper .slide p {
-  max-width: 360px;
+  max-width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: 0.2px;
 }
 
 .carouselWrapper .slide h3 {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.375rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .carouselWrapper .slide p {
   color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .carouselWrapper {
+    max-width: calc(100% - 2rem);
+    min-height: 4rem;
+  }
+
+  .carouselWrapper .slide h3 {
+    font-size: 1.125rem;
+  }
+
+  .carouselWrapper .slide h3,
+  .carouselWrapper .slide p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselWrapper {
+    max-width: calc(100% - 1.5rem);
+    min-height: 3.5rem;
+  }
+
+  .carouselWrapper .slide h3 {
+    font-size: 1rem;
+  }
+
+  .carouselWrapper .slide h3,
+  .carouselWrapper .slide p {
+    font-size: 0.9375rem;
+  }
 }
 
 @keyframes moveText {

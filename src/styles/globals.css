@@ -60,7 +60,7 @@ a {
 
 input {
   font:
-    400 16px 'Poppins',
+    400 1rem 'Poppins',
     sans-serif;
   color: var(--color-text-primary);
 }
@@ -71,5 +71,11 @@ input::placeholder {
 
 ul {
   list-style: none;
-  gap: 20px;
+  gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  ul {
+    gap: 0.75rem;
+  }
 }
